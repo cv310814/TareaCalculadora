@@ -10,17 +10,23 @@
 <body>
     <div class="container">
         <h1>Calculadora</h1>
+        <form >
         <label for="name">Nombre:</label>
         <input type="text" id="name">
         <br>
         <label for="num1">Primer valor:</label>
-        <input type="number" id="value1" >
+        <input type="number" id="value1">
         <br>
         <label for="num2">Segundo valor:</label>
         <input type="number" id="value2" min="1">
         <br>
-        <button onclick="calcular()">Calcular</button>
+        <button type="button" onclick="calcular()">Calcular</button> 
+         
+        <button type="reset">Limpiar</button>
+    </form>
         <div id="resultados"></div>
+
+        
     </div>
     
     <script src="./JavaScript/script.js"></script>
